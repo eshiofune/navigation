@@ -6,10 +6,10 @@ unilag_map = Map()
 unilag_map.add_edges(EDGES)
 
 if __name__ == "__main__":
-    source = raw_input("Where are you now? (Press Enter to exit) ")
+    source = input("Where are you now? (Press Enter to exit) ")
     
     while source != "":
-        destination = raw_input("Where are you going? ")
+        destination = input("Where are you going? ")
         
         path = unilag_map.get_shortest_path(source, destination)
 
@@ -18,4 +18,4 @@ if __name__ == "__main__":
             print(str(node) + " -> ")
         print(str(path[-1]) + "\n")
 
-        source = raw_input("Where are you now? (Press Enter to exit) ")
+        source = input("Where are you now? (Press Enter to exit) ")
